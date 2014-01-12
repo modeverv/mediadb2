@@ -1,0 +1,250 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono|Josefin+Sans);
+/* reset */
+* {
+   margin:0;padding:0;
+}
+body {
+   font-family:'Josefin Sans',"ＤＦ細丸ゴシック体","Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",sans-serif;
+   font-size:16px;
+   line-height:1.5;
+   color:#fefefe;
+   background:#111;
+   width:100%;
+}
+/* layout */
+header ,footer{
+   width:100%;
+   left:0;
+}
+header{
+/*   cursor:pointer;*/
+   width:800px;
+   margin:0 auto;  
+}
+footer {
+   bottom:0;
+   text-align:right;
+   position:fixed;
+}
+#loadergif{
+   display:block;
+   margin:0 auto;
+   margin-top:19%;
+   width:120px;
+   height:200px;
+}
+.search{
+   width:300px;
+   height:35px;
+}
+header h1{
+   width:490px;
+   height:35px;
+   margin-left:3px;
+   color:#FFD511;
+}   
+#wrapper {
+   width:800px;
+   margin:0 auto;
+}
+#grayout {
+   display:none;
+   position:fixed;
+   top:0;
+   left:0;
+   z-index:10;
+   background:url('grayout.png');
+   min-width:100%;
+   min-height:100%;
+}
+#side {
+   width:200px;
+   float:left;
+}
+#pain {
+   width:596px;
+   float:left;;
+}
+#popup {
+   position:fixed;
+   bottom:0;
+   left:0;
+   display:block;
+   width:780px;
+   margin:0;padding:0
+}
+
+/* layout 2 */
+img {
+/*
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+*/
+}
+li {
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+}
+a {
+   text-decoration:none;
+   color:#333;
+   text-align:center;
+}
+a .highlight {
+   background:lightblue;
+}   
+h1 {
+   font-size:16px;
+   padding:0px;
+   line-height:39px;;
+   float:left;
+   font-weight:lighter;
+}
+h2 {
+   margin:0 2em 0 2em ;
+}
+div.search{
+   float:right;
+}
+.text_field {
+   background: none repeat scroll 0 0 lightgray;
+   border-color: -moz-use-text-color -moz-use-text-color #FFF8E8;
+   border-radius: 4px 4px 4px 4px;
+   border-style: none none solid;
+   border-width: medium medium 2px;
+   box-shadow: 0 3px 3px #706751 inset;
+   color: #453000;
+   font-family: 'Ubuntu Mono',Helvetica,Arial,sans-serif;
+   font-size: 12px;
+   margin:7px 5px 3px 5px;
+   padding: 6px 2px 2px 2px;
+   float:left;
+   width:170px;
+}
+form{
+   float:right;
+}   
+.submit_button {
+   float:left;
+   border : none;
+   color: #333;
+   cursor: pointer;
+   display: block;
+   font-family: 'Ubuntu Mono',Helvetica,Arial,sans-serif;
+   font-size: 12px;
+   padding: 3px 8px 2px 8px;
+   margin:9px 15px 5px 5px;
+   background:lightgray;
+}
+a.submit_button{
+   margin:9px 0px 4px 0;
+   padding:1px 8px 1px 8px;
+}
+.submit_button:hover{
+   color:#fff;
+   background:#E90020
+}
+#side ul{
+   padding-top:8px;
+}   
+#side li{
+   overflow-x:hidden;
+   padding:2px 4px 2px 4px;
+}
+#side .highlight {
+   background:#333;
+   color:#fff;
+   cursor:pointer;
+}
+#side .selected {
+   background:darkorange;
+   color:#000;
+}   
+#pain{
+   overflow-x:hidden;
+}   
+#pain li{
+   font-size:14px;
+   list-style:none;
+   display:block;
+   overflow-x:hidden;
+   padding:10px;
+   margin:10px;
+/*   background: url('/mediadb2/back2.png');*/
+}
+#pain img{
+  display:block;
+  padding:0px;
+  float:left;
+  width:200px;
+  height:160px;
+}
+#pain .s_info{
+  display:block;
+  float:left;
+  width:340px;;
+  height:100%;
+  padding:0px 0 0 10px;
+}
+#pain .s_name_e {
+  display:block;
+  width:100%;
+  height:50%;
+}
+#pain .s_info_e {
+  display:block;
+  width:100%;
+  color:#aaa;
+  font-size:0.7em;
+}
+#pain .s_button_e {
+  display:none;
+  float:right;
+  width:60px;
+}
+#pain .s_status_e {
+  display:none;
+  float:left;
+  color:green;
+  width:50%;
+}
+#pain li.highlight{
+   background:#333;
+}
+#pain li.highlight span.s_info{
+   float:left;
+} 
+#pain li.highlight span.s_button_e{
+  display:block;
+}   
+#pain li.selected{
+   background:darkorange;
+   color:#000;
+}   
+#pain li.selected span.s_status_e{
+  display:block;
+}   
+#thumb_m {
+   display:block;
+   color:#ccc;
+/*   background:#333;*/
+   min-height:300px;
+   min-width:400px;
+   font-size:8em;
+}
+#imgarea img{
+   display:block;
+   margin:15px;
+   z-index:20;
+}
+#imgarea a.highlight img{
+   opacity:1;
+}
+footer p {
+   margin:0 10px 0 0;
+}
+li,div{
+/*   border:1px solid;*/
+}   

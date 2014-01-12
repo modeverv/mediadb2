@@ -1,0 +1,13 @@
+elem += "<span class='s_v_name'>" + json[i]['name] + "</span>";
+elem += "<span class='s_v_info'>"
+elem += "video_codec:" + json[i]['video_codec'] + " ";
+elem += "audio_codec:" + json[i]['audio_codic'] + " ";
+elem += "resolution:"  + json[i]['resolution']  + " ";
+elem += "bitrate:"     + json[i]['bitrate'] + " ";
+elem += "duration:"    + json[i]['duration'] + " ";
+elem += "size:"        + json[i]['size'] + " ";
+elem += "</span>"
+
+
+
+id:4e8b067d9ef02f70fb00009a

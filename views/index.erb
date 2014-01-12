@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>mediadb2</title>
+    <link rel="icon" href="http://ja.gravatar.com/userimage/14611836/d5caef2a5366cf647fc8fba3430e5854.png" type="image/png">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="<%= prefix %>/pc.css" type="text/css" media="screen" />
+<!--    
+    <link href="<%=@prefix%>/iphone.css" rel="stylesheet" type= "text/css" media="only screen and (max-device-width: 480px)">
+-->    
+    <script type="text/javascript" src="/mediadb2/jquery.js"></script>
+    <% if @config == 'websocket.js' %>
+      <!--
+      <script src='<%=@prefix%>/js/swfobject.js'></script>
+      <script src='<%=@prefix%>/js/FABridge.js'></script>
+      <script src='<%=@prefix%>/js/web_socket.js'></script>
+      -->
+    <% end %>
+    <script type="text/javascript" src="<%= prefix%>/<%=@config%>"></script>
+    <script type="text/javascript" src="<%= prefix%>/mediadb2.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <div id="grayout">
+        <img id='loadergif' src='<%= prefix %>/loader.gif' width='128px' height='128px' alt='Loading..'>
+      </div>
+      
+      <h1 id="title"><a href="<%= prefix %>/">mediadb2</a><span id="echoarea"></span></h1>
+      <div class="search">
+        <form onsubmit="run();return false;" >
+          <input type="text" class="text_field" id="query">
+          <input type="button" class='submit_button' onclick="run();return false;" value="Search">
+        </form>
+      </div>
+    </header>
+
+    <div id="wrapper">
+      <div id="side">&nbsp;</div>
+      <div id="pain">&nbsp;</div>
+      <!--
+         <div id="popup">
+           <div id="exifarea"></div>
+           <div id="imgarea"></div>
+         </div>
+         -->
+    </div>
+
+    <footer><p>modeverv＠gmail.com</p></footer>
+  </body>
+</html>
+
+

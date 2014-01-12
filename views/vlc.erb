@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>mediadb2::view <%= File.basename(@media.path) %></title>
+    <link rel="icon" href="http://ja.gravatar.com/userimage/14611836/d5caef2a5366cf647fc8fba3430e5854.png" type="image/png">
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript" src="/mediadb2/jquery.js"></script>
+    <link rel="stylesheet" href="/mediadb2/pc.css" type="text/css" media="screen" />
+    <script src="http://api.html5media.info/1.1.4/html5media.min.js"></script>
+    <style>
+     header{
+       width:100%;
+     }   
+   </style>
+  </head>
+  <body>
+    <header>
+      <h1>mediadb2::view</h1>
+    </header>
+    <div id="vlc1" style="width:800px;margin:0 auto;">
+<!--      
+        <video width='100%' autoplay preload controls src='/stream/mediadb2/<%= @media._id %>/file<%= File.extname(@media.path).downcase %>'></video>
+-->
+
+<object width="800px" height="600px" type="application/x-shockwave-flash" data="http://api.html5media.info/1.1.4/flowplayer.swf" id="fp_64283556_api">
+<param name="allowfullscreen" value="true">
+<param name="allowscriptaccess" value="always">
+<param name="quality" value="high">
+<param name="cachebusting" value="false">
+<param name="bgcolor" value="#000000">
+<param name="wmode" value="opaque">
+<param name="flashvars" value="config={&quot;play&quot;:null,&quot;playlist&quot;:[{&quot;url&quot;:&quot;http://<%= request.host%>/stream/mediadb2/<%= @media._id %>/file<%= File.extname(@media.path).downcase %>&quot;,&quot;autoPlay&quot;:true,&quot;autoBuffering&quot;:true,&quot;scaling&quot;:&quot;fit&quot;,&quot;fadeInSpeed&quot;:0,&quot;fadeOutSpeed&quot;:0}],&quot;clip&quot;:{&quot;scaling&quot;:&quot;fit&quot;,&quot;fadeInSpeed&quot;:0,&quot;fadeOutSpeed&quot;:0},&quot;plugins&quot;:{&quot;controls&quot;:{&quot;url&quot;:&quot;http://api.html5media.info/1.1.4/flowplayer.controls.swf&quot;,&quot;fullscreen&quot;:false,&quot;autoHide&quot;:&quot;always&quot;}},&quot;playerId&quot;:&quot;fp_64283556&quot;}">
+<!--
+<param name="flashvars" value="config={&quot;play&quot;:null,&quot;playlist&quot;:[{&quot;url&quot;:&quot;http://<%= request.host%>/mediadb2/api/stream/<%= @media._id %>/file<%= File.extname(@media.path).downcase %>&quot;,&quot;autoPlay&quot;:true,&quot;autoBuffering&quot;:true,&quot;scaling&quot;:&quot;fit&quot;,&quot;fadeInSpeed&quot;:0,&quot;fadeOutSpeed&quot;:0}],&quot;clip&quot;:{&quot;scaling&quot;:&quot;fit&quot;,&quot;fadeInSpeed&quot;:0,&quot;fadeOutSpeed&quot;:0},&quot;plugins&quot;:{&quot;controls&quot;:{&quot;url&quot;:&quot;http://api.html5media.info/1.1.4/flowplayer.controls.swf&quot;,&quot;fullscreen&quot;:false,&quot;autoHide&quot;:&quot;always&quot;}},&quot;playerId&quot;:&quot;fp_64283556&quot;}">
+-->
+</object>
+        
+    </div>
+    <div style='float:right'> <%= File.basename(@media.path) %></div>
+  </body>
+</html>
+
+
+
